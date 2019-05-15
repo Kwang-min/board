@@ -15,12 +15,12 @@ public class BoardDAOImpl implements BoardDAO {
 	@Inject
 	private SqlSession session;
 	
-	private static String namespace = "com.board.domain.BoardVO";
+	private static String namespace = "com.myp.mapper.BoardMapper";
 	
 	@Override
 	public void create(BoardVO vo) throws Exception {
 		// TODO Auto-generated method stub
-		session.insert(namespace+"create",vo);
+		session.insert(namespace+".create",vo);
 	}
 
 	@Override
